@@ -1,0 +1,15 @@
+<h1>Article Index Page</h1>
+<table>
+	<tr>
+		<th colspan="2">Title</th>
+		<th colspan="8">Description</th>
+		<th>Action</th>
+	</tr>
+	<% @articles.each do |article| %>
+	<tr>
+		<td colspan="2"><%= article.title %></td>
+		<td colspan="8"><%= article.description %></td>
+		<td>Placeholder</td>
+	</tr>
+	<% end %>
+</table> 
